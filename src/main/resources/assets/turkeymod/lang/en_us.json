@@ -1,0 +1,12 @@
+{
+  "entity.turkeymod.turkey": "Turkey",
+  "item.turkeymod.turkey_spawn_egg": "Turkey Spawn Egg",
+  "item.turkeymod.raw_turkey": "Raw Turkey",
+  "item.turkeymod.cooked_turkey": "Cooked Turkey",
+  "sounds.turkeymod.turkey_ambient": "Turkey gobbles",
+  "sounds.turkeymod.turkey_hurt": "Turkey hurt",
+  "sounds.turkeymod.turkey_death": "Turkey dies",
+  "subtitles.turkeymod.entity.turkey_ambient": "Turkey gobbles",
+  "subtitles.turkeymod.entity.turkey_hurt": "Turkey hurt",
+  "subtitles.turkeymod.entity.turkey_death": "Turkey dies"
+}

@@ -1,0 +1,20 @@
+{
+  "turkey_ambient": {
+    "subtitles": "sounds.turkeymod.turkey_ambient",
+    "sounds": [
+      "turkeymod:turkey_ambient"
+    ]
+  },
+  "turkey_hurt": {
+    "subtitles": "sounds.turkeymod.turkey_hurt",
+    "sounds": [
+      "turkeymod:turkey_hurt"
+    ]
+  },
+  "turkey_death": {
+    "subtitles": "sounds.turkeymod.turkey_death",
+    "sounds": [
+      "turkeymod:turkey_death"
+    ]
+  }
+}
