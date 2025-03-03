@@ -10,6 +10,7 @@ import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.phazoganon.turkeymod.TurkeyMod;
 import net.phazoganon.turkeymod.entity.ModEntities;
+import net.phazoganon.turkeymod.entity.client.ModModelLayers;
 import net.phazoganon.turkeymod.entity.client.turkey.TurkeyModel;
 import net.phazoganon.turkeymod.entity.custom.TurkeyEntity;
 
@@ -17,7 +18,8 @@ import net.phazoganon.turkeymod.entity.custom.TurkeyEntity;
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions registerLayerDefinitions) {
-        registerLayerDefinitions.registerLayerDefinition(TurkeyModel.MODEL_LAYER_LOCATION, TurkeyModel::createBodyLayer);
+        registerLayerDefinitions.registerLayerDefinition(ModModelLayers.TURKEY_LAYER, TurkeyModel::createBodyLayer);
+        registerLayerDefinitions.registerLayerDefinition(ModModelLayers.BABY_TURKEY_LAYER, () -> TurkeyModel.createBodyLayer().apply(TurkeyModel.BABY_TRANSFORMER));
     }
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent entityAttributeCreationEvent) {
